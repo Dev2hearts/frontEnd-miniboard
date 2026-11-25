@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f3f6f8; color: #172d3a; }
+main { max-width: 840px; margin: 40px auto; padding: 0 20px; }
+.topbar, .actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.topbar { justify-content: space-between; }
+.card { background: white; padding: 24px; border: 1px solid #dbe3e9; border-radius: 16px; margin: 20px 0; }
+.auth { max-width: 460px; margin: 40px auto; }
+fieldset { padding: 0; margin: 0; border: 0; min-width: 0; }
+label { display: block; font-weight: 600; margin-top: 12px; }
+input, textarea { display: block; width: 100%; padding: 12px; margin: 8px 0 16px; border: 1px solid #aabcc7; border-radius: 8px; font: inherit; }
+button { padding: 10px 16px; margin: 8px 0; border: 0; border-radius: 8px; background: #126453; color: white; font: inherit; cursor: pointer; }
+button:disabled { opacity: .5; cursor: wait; }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #d29515; outline-offset: 3px; }
+.error { color: #a42620; background: #ffeded; padding: 12px; border-radius: 8px; }
+.post-content { white-space: pre-wrap; overflow-wrap: anywhere; }
+h3, span { overflow-wrap: anywhere; }
+small { color: #536776; }
