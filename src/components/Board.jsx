@@ -1,7 +1,9 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState, useContext } from 'react'
 import { supabase } from '../lib/supabase'
+import { SessionContext } from '../contexts/contexts'
 
-export default function Board({ user }) {
+export default function Board() {
+  const { user } = useContext(SessionContext);
   const [posts, setPosts] = useState([])
   const [title, setTitle] = useState('')
   const [content, setContent] = useState('')
